@@ -3,23 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register - CyberFit</title>
+  <title>CyberFit Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-</head>
-<body class="login-body">
-  <div class="form-container">
-    <h2>Create Your CyberFit Account</h2>
-    <form id="registerForm">
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <button type="submit">Register</button>
-    </form>
-    <p style="margin-top: 10px;">Already have an account? <a href="login.html">Login</a></p>
-  </div>
+  <style>
+    .register-container {
+      max-width: 480px;
+      margin: 5em auto;
+      padding: 2em;
+      background-color: rgba(0, 0, 0, 0.85);
+      border: 1px solid #ff66cc;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 102, 204, 0.3);
+      text-align: center;
+    }
 
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="firebase-config.js"></script>
-  <script src="register.js"></script>
+    .register-container h2 {
+      color: #ff66cc;
+      margin-bottom: 1em;
+      text-shadow: 0 0 10px #ff66cc;
+    }
+
+    .register-container input {
+      width: 100%;
+      padding: 0.9em;
+      margin: 1em 0;
+      border: 1px solid #ff66cc;
+      border-radius: 8px;
+      background: #111;
+      color: #f4f4f4;
+      font-size: 1em;
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 1em;
+      background-color: #ff66cc;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(255, 102, 204, 0.4);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .register-container button:hover {
+      background-color: #ff3399;
+      box-shadow: 0 0 25px rgba(255, 102, 204, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo">CyberFit Protocol</div>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="register-container">
+      <h2>Create Your CyberFit Account</h2>
+      <form id="register-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

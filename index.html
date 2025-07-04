@@ -3,166 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberFit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="navbar">
-    <div class="logo">CyberFit</div>
-    <div>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </div>
-  </div>
-
-  <div class="hero">
-    <h1>Take Charge of Your Money and Fitness</h1>
-    <p>CyberFit helps you manage your finances and achieve your fitness goals.</p>
-    <div class="buttons">
-      <button class="get-started">Get Started</button>
-      <button class="learn-more">Learn More</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberFit - Command Dashboard</title>
+  <title>CyberFit - Neon Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background: url('miami vice picture.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <div class="logo">
-        <span class="shield-icon">🏋️</span>
-        <span class="logo-text">CyberFit Protocol</span>
-      </div>
-      <ul class="nav-list">
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>CYBERFIT</h1>
-        <p class="hero-subtitle">STAY FIT // STAY FUNDED</p>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">All-In-One</span>
-            <span class="stat-label">Fitness & Finance</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">Daily</span>
-            <span class="stat-label">Progress Tracking</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">Personalized</span>
-            <span class="stat-label">Goals + Budgeting</span>
-          </div>
+  <div class="overlay">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="shield-icon">🏋️</span>
+          <span class="logo-text">CyberFit Protocol</span>
         </div>
-        <a href="register.html" class="hero-button">
-          <span class="button-text">Join CyberFit</span>
-          <span class="button-icon">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cards Section -->
-  <section class="cards-section" id="features">
-    <div class="section-header">
-      <h2>CYBER MODULES</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="cards-container">
-      <div class="card">
-        <div class="card-image" style="background-image: url('images/workout-module.jpg')"></div>
-        <div class="card-content">
-          <div class="card-tag">WORKOUT</div>
-          <h3>Training Planner</h3>
-          <p>Custom workout routines built for your goals and schedule.</p>
-          <div class="card-footer">
-            <span class="clearance">ACTIVE</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image" style="background-image: url('images/finance-module.jpg')"></div>
-        <div class="card-content">
-          <div class="card-tag">FINANCE</div>
-          <h3>Budget Tracker</h3>
-          <p>Real-time financial planning and spending insights.</p>
-          <div class="card-footer">
-            <span class="clearance">ENCRYPTED</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image" style="background-image: url('images/community-module.jpg')"></div>
-        <div class="card-content">
-          <div class="card-tag">COMMUNITY</div>
-          <h3>Accountability Group</h3>
-          <p>Train with others and share your journey inside the CyberFit network.</p>
-          <div class="card-footer">
-            <span class="clearance">MEMBERS ONLY</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>CYBERFIT HQ</h4>
-        <p>Strategic Command for Body & Budget Control</p>
-        <div class="coordinates">
-          <span>Virtual Domain - Global Access</span>
-          <span>24/7 Protocols</span>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h4>QUICK LINKS</h4>
-        <ul class="footer-links">
+        <ul class="nav-list">
           <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="register.html">Register</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>CONNECT</h4>
-        <div class="social-links">
-          <a href="#"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fas fa-phone"></i></a>
-          <a href="#"><i class="fas fa-comments"></i></a>
-          <a href="#"><i class="fas fa-info-circle"></i></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>CYBERFIT</h1>
+          <p class="hero-subtitle">STAY FIT // STAY FUNDED</p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">All-In-One</span>
+              <span class="stat-label">Fitness & Finance</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Daily</span>
+              <span class="stat-label">Progress Tracking</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Personalized</span>
+              <span class="stat-label">Goals + Budgeting</span>
+            </div>
+          </div>
+          <a href="register.html" class="hero-button">
+            <span class="button-text">Join CyberFit</span>
+            <span class="button-icon">→</span>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>CYBERFIT PROTOCOL ACTIVE // FULL SYSTEM ACCESS GRANTED</p>
-    </div>
-  </footer>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section" id="features">
+      <div class="section-header">
+        <h2>CYBER MODULES</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-image" style="background-image: url('images/workout-module.jpg')"></div>
+          <div class="card-content">
+            <div class="card-tag">WORKOUT</div>
+            <h3>Training Planner</h3>
+            <p>Custom workout routines built for your goals and schedule.</p>
+            <div class="card-footer">
+              <span class="clearance">ACTIVE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('images/finance-module.jpg')"></div>
+          <div class="card-content">
+            <div class="card-tag">FINANCE</div>
+            <h3>Budget Tracker</h3>
+            <p>Real-time financial planning and spending insights.</p>
+            <div class="card-footer">
+              <span class="clearance">ENCRYPTED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('images/community-module.jpg')"></div>
+          <div class="card-content">
+            <div class="card-tag">COMMUNITY</div>
+            <h3>Accountability Group</h3>
+            <p>Train with others and share your journey inside the CyberFit network.</p>
+            <div class="card-footer">
+              <span class="clearance">MEMBERS ONLY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>CYBERFIT HQ</h4>
+          <p>Strategic Command for Body & Budget Control</p>
+          <div class="coordinates">
+            <span>Virtual Domain - Global Access</span>
+            <span>24/7 Protocols</span>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>CONNECT</h4>
+          <div class="social-links">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fas fa-comments"></i></a>
+            <a href="#"><i class="fas fa-info-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>CYBERFIT PROTOCOL ACTIVE // FULL SYSTEM ACCESS GRANTED</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -4,25 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CyberFit Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">CyberFit</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="login.html">Logout</a>
-    </div>
-  </div>
+  <div class="overlay">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo">CyberFit Protocol</div>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="hero">
-    <h1>Welcome Back, Champion 🏋️</h1>
-    <p>Here's your progress:</p>
-    <div class="dashboard-cards">
-      <div class="card">💪 Workouts Completed: <strong>8</strong></div>
-      <div class="card">🔥 Calories Burned: <strong>2,400</strong></div>
-      <div class="card">💰 Money Saved: <strong>$350</strong></div>
-    </div>
+    <section class="section-header">
+      <h2>Welcome Back</h2>
+      <div class="section-line"></div>
+    </section>
+
+    <section class="dashboard-cards">
+      <div class="card">
+        <h3>Daily Workout</h3>
+        <p>Chest & Back - 4 Exercises</p>
+      </div>
+      <div class="card">
+        <h3>Calories Remaining</h3>
+        <p>1,450 kcal</p>
+      </div>
+      <div class="card">
+        <h3>Budget Update</h3>
+        <p>$220 of $500 Used</p>
+      </div>
+      <div class="card">
+        <h3>Current Goals</h3>
+        <p>Save 15%, Drop 5 lbs</p>
+      </div>
+    </section>
   </div>
 </body>
 </html>
