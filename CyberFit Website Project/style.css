@@ -5,41 +5,29 @@ body {
   background: url('miami vice picture.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #f4f4f4;
-  line-height: 1.7;
-  letter-spacing: 0.5px;
-  scroll-behavior: smooth;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Quantico', sans-serif;
-  margin: 0 0 0.5em;
+  margin: 0;
   color: #ff66cc;
   text-shadow: 0 0 10px #ff66cc;
 }
 
-h1 {
-  font-size: 3.2em;
-}
-
-h2 {
-  font-size: 2.2em;
-}
-
 p {
   margin: 0.5em 0;
-  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
   color: #ff66cc;
   transition: color 0.3s ease;
-  font-weight: 500;
 }
 
 a:hover {
@@ -55,24 +43,32 @@ a:hover {
   box-shadow: 0 2px 15px rgba(255, 0, 128, 0.4);
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .logo {
-  font-size: 2em;
-  font-weight: 900;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: 700;
   color: #ff66cc;
-  text-shadow: 0 0 10px #ff66cc, 0 0 30px #ff66cc;
-  letter-spacing: 1px;
+  text-shadow: 0 0 8px #ff66cc;
 }
 
 .nav-list {
   display: flex;
   gap: 2em;
   list-style: none;
+  margin-left: auto;
 }
 
 .nav-list li a {
   color: #fff;
   font-weight: 600;
-  font-size: 1.1em;
 }
 
 .nav-list li a:hover {
@@ -81,9 +77,7 @@ a:hover {
 
 .section-header h2 {
   text-align: center;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .section-line {
@@ -104,22 +98,22 @@ a:hover {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
   overflow: hidden;
   border: 1px solid #ff66cc;
-  box-shadow: 0 0 20px rgba(255, 102, 204, 0.3);
+  box-shadow: 0 0 15px rgba(255, 102, 204, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
-  text-align: left;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 30px rgba(255, 102, 204, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 102, 204, 0.6);
 }
 
 .card-image {
-  height: 250px;
+  height: 500px;
+  width: 380px;
   background-size: cover;
   background-position: center;
 }
@@ -129,58 +123,20 @@ a:hover {
 }
 
 .card-tag {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: bold;
-  color: #ffccff;
+  color: #ff66cc;
   letter-spacing: 1px;
-  margin-bottom: 0.3em;
-  text-transform: uppercase;
+  margin-bottom: 0.5em;
 }
 
 .card-footer {
   margin-top: 1em;
-  font-size: 0.9em;
-  color: #bbb;
 }
 
 .clearance {
-  font-size: 0.85em;
-  font-weight: bold;
+  font-size: 0.75em;
   color: #ffccff;
-}
-
-.dashboard-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2em;
-  padding: 2em;
-}
-
-.dashboard-cards .card {
-  background-color: rgba(0,0,0,0.85);
-  border: 1px solid #ff66cc;
-  border-radius: 12px;
-  padding: 1.8em;
-  text-align: center;
-  box-shadow: 0 0 18px rgba(255, 102, 204, 0.3);
-  color: #fff;
-  transition: transform 0.3s ease;
-}
-
-.dashboard-cards .card:hover {
-  transform: scale(1.03);
-}
-
-.dashboard-cards .card h3 {
-  margin-bottom: 0.5em;
-  color: #ff66cc;
-  font-weight: 800;
-  font-size: 1.5em;
-}
-
-.dashboard-cards .card p {
-  font-size: 1.2em;
-  color: #f0d0ff;
 }
 
 .footer {
@@ -193,14 +149,12 @@ a:hover {
 
 .footer-section {
   flex: 1 1 200px;
+  margin-bottom: 2em;
 }
 
 .footer-section h4 {
   color: #ff66cc;
   margin-bottom: 1em;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .footer-links a {
@@ -208,7 +162,6 @@ a:hover {
   display: block;
   margin-bottom: 0.5em;
   transition: color 0.3s;
-  font-size: 1em;
 }
 
 .footer-links a:hover {
@@ -220,7 +173,6 @@ a:hover {
   margin-top: 2em;
   font-size: 0.85em;
   color: #999;
-  text-transform: uppercase;
 }
 
 .footer-content {
@@ -232,36 +184,84 @@ a:hover {
   padding: 2em;
 }
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap');
+
+.hero {
+  background: linear-gradient(to bottom, rgba(13, 13, 48, 0.8), rgba(26, 0, 80, 0.8)),
+              url('your-background.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero p.subtitle {
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.25rem;
+  color: #ff2d55;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Stat container like Cap site */
 .hero-stats {
+  display: flex;
   justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-stats .stat {
   text-align: center;
-  margin-top: 2em;
 }
 
-.hero-text {
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
+.hero-stats .stat h2 {
+  font-size: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
 }
 
-.hero-button {
-  display: inline-block;
-  padding: 1em 2em;
-  margin-top: 1.5em;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #000;
-  background-color: #ff66cc;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 15px rgba(255, 102, 204, 0.5);
+.hero-stats .stat p {
+  font-size: 0.9rem;
+  font-family: 'Quantico', sans-serif;
+  color: #bbb;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.hero-button:hover {
-  background-color: #ff3399;
-  box-shadow: 0 0 25px rgba(255, 102, 204, 0.7);
+/* Button styling like Access Files */
+.hero .cta-button {
+  background-color: #ff2d55;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: #e60039;
+}
+
+.button-text {
+  margin-right: 0.5em;
 }
 
 .social-links a {
