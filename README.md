@@ -5,7 +5,7 @@ CyberFit is a futuristic fitness and finance dashboard built by Marine Corps vet
 ---
 
 ## 🚀 Live Demo
-[🔗 View the Live Site]([https://your-live-site-url.com](https://cyberfit-protocol.netlify.app/)) 
+[🔗 View the Live Site](https://cyberfit-protocol.netlify.app/) 
 
 ---
 
