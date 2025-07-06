@@ -68,4 +68,4 @@ Built by U.S. Marine Corps Veterans — committed to discipline, teamwork, and r
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/yourusername/cyberfit.git
+   git clone https://github.com/NTarver17/cyberfit.git
