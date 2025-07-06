@@ -1,3 +1,4 @@
+// Your Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBX0xl0Vil1Ltl7yYXhRNL9AQv0K3JhQkU",
   authDomain: "cyberfit-f92c1.firebaseapp.com",
@@ -9,3 +10,4 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+

@@ -7,31 +7,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
+    .register-page {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, rgba(27, 0, 54, 0.85), rgba(13, 13, 48, 0.9)),
+                  url('your-register-background.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 8rem;
+    }
+
     .register-container {
       max-width: 480px;
-      margin: 5em auto;
       padding: 2em;
       background-color: rgba(0, 0, 0, 0.85);
-      border: 1px solid #ff66cc;
+      border: 1px solid var(--secondary);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 102, 204, 0.3);
+      box-shadow: 0 0 20px rgba(255, 45, 85, 0.3);
       text-align: center;
     }
 
     .register-container h2 {
-      color: #ff66cc;
-      margin-bottom: 1em;
-      text-shadow: 0 0 10px #ff66cc;
+      font-family: 'Quantico', sans-serif;
+      color: var(--secondary);
+      margin-bottom: 1.5em;
+      text-shadow: 0 0 10px var(--secondary);
     }
 
     .register-container input {
       width: 100%;
       padding: 0.9em;
       margin: 1em 0;
-      border: 1px solid #ff66cc;
+      border: 1px solid var(--secondary);
       border-radius: 8px;
       background: #111;
-      color: #f4f4f4;
+      color: var(--text);
       font-size: 1em;
       font-family: 'Rajdhani', sans-serif;
     }
@@ -39,44 +49,62 @@
     .register-container button {
       width: 100%;
       padding: 1em;
-      background-color: #ff66cc;
-      color: #000;
+      background-color: var(--secondary);
+      color: var(--text);
       font-weight: bold;
       font-size: 1.1em;
       border: none;
       border-radius: 30px;
       cursor: pointer;
-      box-shadow: 0 0 15px rgba(255, 102, 204, 0.4);
+      box-shadow: 0 0 15px rgba(255, 45, 85, 0.4);
       transition: background 0.3s ease, box-shadow 0.3s ease;
     }
 
     .register-container button:hover {
-      background-color: #ff3399;
-      box-shadow: 0 0 25px rgba(255, 102, 204, 0.6);
+      background-color: #A01830;
+      box-shadow: 0 0 25px rgba(255, 45, 85, 0.6);
     }
   </style>
 </head>
 <body>
   <div class="overlay">
+    <!-- Navigation -->
     <nav class="nav">
       <div class="nav-container">
-        <div class="logo">CyberFit Protocol</div>
+        <div class="logo">
+          <span class="shield-icon">💪</span>
+          <span class="logo-text">CyberFit Protocol</span>
+        </div>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html" class="nav-cta">Login</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="register-container">
-      <h2>Create Your CyberFit Account</h2>
-      <form id="register-form">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button type="submit">Register</button>
-      </form>
+    <!-- Register Section -->
+    <div class="register-page">
+      <div class="register-container">
+        <h2>Create Your CyberFit Account</h2>
+        <form id="register-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
   </div>
+
+<!-- Firebase SDKs (Core + Auth) -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+<!-- Firebase Config -->
+<script src="firebase-config.js"></script>
+
+<!-- Register Logic -->
+<script src="register.js"></script>
+
 </body>
 </html>

@@ -9,37 +9,72 @@
 </head>
 <body>
   <div class="overlay">
+    <!-- Navigation -->
     <nav class="nav">
       <div class="nav-container">
-        <div class="logo">CyberFit Protocol</div>
+        <div class="logo">
+          <span class="shield-icon">💪</span>
+          <span class="logo-text">CyberFit Protocol</span>
+        </div>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Logout</a></li>
+          <li><a href="login.html" class="nav-cta">Logout</a></li>
         </ul>
       </div>
     </nav>
 
-    <section class="section-header">
-      <h2>Welcome Back</h2>
-      <div class="section-line"></div>
-    </section>
+    <!-- Dashboard Header -->
+    <section class="cards-section" style="padding-top: 8rem;">
+      <div class="section-header">
+        <h2>Welcome Back</h2>
+        <div class="section-line"></div>
+      </div>
 
-    <section class="dashboard-cards">
-      <div class="card">
-        <h3>Daily Workout</h3>
-        <p>Chest & Back - 4 Exercises</p>
-      </div>
-      <div class="card">
-        <h3>Calories Remaining</h3>
-        <p>1,450 kcal</p>
-      </div>
-      <div class="card">
-        <h3>Budget Update</h3>
-        <p>$220 of $500 Used</p>
-      </div>
-      <div class="card">
-        <h3>Current Goals</h3>
-        <p>Save 15%, Drop 5 lbs</p>
+      <!-- Dashboard Cards -->
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-tag">WORKOUT</div>
+            <h3>Daily Workout</h3>
+            <p>Chest & Back - 4 Exercises</p>
+            <div class="card-footer">
+              <span class="clearance">ACTIVE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="card-tag">NUTRITION</div>
+            <h3>Calories Remaining</h3>
+            <p>1,450 kcal</p>
+            <div class="card-footer">
+              <span class="clearance">LIVE TRACKING</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="card-tag">FINANCE</div>
+            <h3>Budget Update</h3>
+            <p>$220 of $500 Used</p>
+            <div class="card-footer">
+              <span class="clearance">ON BUDGET</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="card-tag">GOALS</div>
+            <h3>Current Goals</h3>
+            <p>Save 15%, Drop 5 lbs</p>
+            <div class="card-footer">
+              <span class="clearance">TRACKING</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
